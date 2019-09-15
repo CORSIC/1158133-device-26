@@ -103,8 +103,23 @@
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
                  проверить работоспособность покупки. Всякое бывает.
                  </p></li>
-                 <li><button type="button"><span>Напишите нам</span></button></li>
-            </ul><img src="img/carts.png" width="500" height="250" alt="карта">
+                 </ul>
+
+                 <button type="button"><span>Напишите нам</span></button>
+                 <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label for="appointment-name"> Имя: </label>
+                  <input id="appointment-name" type="text" name="name"placeholder="Сергей">
+                </p>
+                <p><label for="appointment-mail"> Ваш E-mail: </label>
+                  <input id="appointment-mail" type="text" name="E-mail"placeholder="example@example.fr">
+                </p>
+                <p><label for="appointment-text"> Текст письма: </label>
+                  <input id="appointment-text" type="text" name="text"placeholder="Напишите ваше сообщение">
+                </p>
+                <button type="submit">Отправить</button>
+                </form>
+                 <img src="img/carts.png" width="500" height="250" alt="карта">
         </section>
     </main>
     <footer>
