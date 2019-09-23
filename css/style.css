@@ -1,0 +1,301 @@
+@font-face {
+    font-family : "Gilroy";
+    src: url ("../fonts/gilroyextrabold.woff2") format ('woff2');
+    src: url ("../fonts/gilroyextrabold.woff") format ('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family :"Gilroy";
+    src: url ("../fonts/gilroylight.woff2") format ('woff2');
+    src: url ("../fonts/gilroylight.woff") format ("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family : "Open Sans";
+    src: url ("../fonts/opensans.woff2") format ("woff2");
+    src: url ("../fonts/opensans.woff") format ("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family : "Open Sans";
+    src: url ("../fonts/opensanslight.woff2") format ("woff2");
+    src: url ("../fonts/opensanslight.woff") format ("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Arial", "sans-serif";
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+  }
+
+
+.main-header {
+    background-color: #f7e296
+    
+
+}
+
+
+.nav-principale {
+    list-style: none;
+}
+
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: #000000;
+    background-color: #f4d361;
+    border: none;
+
+}
+
+.slogan {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 56px;
+}
+
+.plus {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+
+.dimension {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
+    list-style: none;
+}
+
+
+.dimension-open {
+    font-family: "Open Sans", "Arial", "sans-serif";
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+    list-style: none;
+}
+
+
+.nav-list {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    line-height: 24px;
+    list-style: none;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 24px;
+    list-style: none;
+}
+
+.list-device {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+
+}
+
+.livraison {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+
+}
+
+.grand-livraison {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 30px;
+    list-style: none;
+
+}
+
+.about {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+    list-style: none;
+
+}
+
+.about-2 {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 30px;
+    list-style: none;
+
+}
+
+.information {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+
+}
+
+.contact {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+    list-style: none;
+
+}
+
+.produit {
+    list-style: none;
+
+}
+
+.fon {
+    background-color: #e5e5e5
+
+}
+
+
+.footer {
+
+    background-color: #464646  
+}
+
+.footer-begin {
+    color: #7a7a7a
+}
+
+
+.list-device-back{
+    background-color: #f7e296
+
+
+}
+
+.logo-bas {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 15px;
+    list-style: none;
+    background-color: #ffc600
+
+}
+
+.adresse {
+    color: #7a7a7a
+}
+
+.nav-bas {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+    color: #ffffff
+}
+
+.reseaux {
+    color: #7a7a7a
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+
+
+/* Здесь буду писать стили для каталога */
+
+
+.logo-catalog {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 47px;
+    line-height: 48px;
+    color: #000000
+}
+
+.filtr {
+    background-color: #efefef
+}
+
+.filtr-catalog {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000
+}
+
+
+.amateur {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+    color: #000000  
+}
+
+.cout {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000  
+}
+
+.numerotation {
+    font-family: "Gilroy", "Arial", "sans-serif";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;  
+    background-color: #efefef;
+    text-decoration: none;
+}

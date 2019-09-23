@@ -3,41 +3,48 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header><div><img src="img/logo-device.svg" width="120" height="130" alt="logo-device"></div>
+      <img src="img/logo-device.svg" width="120" height="130" alt="logo-device">
+    <header class="main-header">
       <nav>
-        <ul>
-          <li><a href="">Войти</a></li>
+          <form>
+              <p><input type="search" name="q" placeholder="Поиск по сайту">
+                <input type="submit" value="Найти" ></p>
+             </form>
+        <ul class="nav-principale">
+         <li><a href="">Войти</a></li>
           <li><a href="">Сравнить</a></li>
           <li><a href="">Корзина</a></li>
         </ul>
       </nav>
       <nav>
-        <ul>
-          <li><a href="catalog.html">Каталог товаров</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="nav-list">
+          <li><a href="catalog.html" class="nav-link">Каталог товаров</a></li>
+          <li><a href="" class="nav-link">Доставка</a></li>
+          <li><a href="" class="nav-link">Гарантия</a></li>
+          <li><a href="" class="nav-link">Контакты</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
-        <h1>Магазин DEVICE</h1>
-
-        <p><span>Делай сэлфи,<br>
-                 как Бэн Стиллер!</span></p>
+          <p class="slogan">Делай сэлфи,<br>
+                 как Бэн Стиллер!</p>
+                 <img src="img/Tripied.png">
         <p><span>Самая длинная палка для сэлфи доступна в нашем магазине.<br>
            Восемь(Восемь, Карл!) метров длинной и весом всего 5 килограмм</span></p>
-           <a href="">Подробнее</a>
+          
+           <a href="#" class="plus">Подробнее</a>
         
-            <ul>
+            <ul class="dimension">
              <li>8.5 метров</li>
              <li>5 кг</li>
              <li>Карбон</li>
             </ul>
-            <ul>
+            <ul class="dimension-open">
              <li>Длина палки</li>
              <li>Вес палки</li>
              <li>Материал</li>
@@ -46,31 +53,33 @@
       </section>
 
      
-        <ul>
-          <li><a href="#"><img src="img/popular-1.svg" alt="Виртуальная реальность">Виртуальная реальность</a></li>
-          <li><a href=""><img src="img/popular-2.svg" alt="Виртуальная реальность">Моноподы для сэлфи</a></li>
-          <li><a href=""><img src="img/popular-3.svg" alt="Экшн-камеры">Экшн-камеры</a></li>
-          <li><a href=""><img src="img/popular-4.svg" alt="Фитнес-браслеты">Фитнес-браслеты</a></li>
-          <li><a href=""><img src="img/popular-5.svg" alt="Фитнес-браслеты">Умные часы</a></li>
-          <li><a href=""><img src="img/popular-6.svg" alt="Квадрокоптеры">Квадрокоптеры</a></li>
+        <ul class="list-device">
+          <li><a href="#"><img src="img/popular-1.svg" alt="Виртуальная реальность" class="list-device-back">Виртуальная реальность</a></li>
+          <li><a href=""><img src="img/popular-2.svg" alt="Виртуальная реальность" class="list-device-back">Моноподы для сэлфи</a></li>
+          <li><a href=""><img src="img/popular-3.svg" alt="Экшн-камеры" class="list-device-back">Экшн-камеры</a></li>
+          <li><a href=""><img src="img/popular-4.svg" alt="Фитнес-браслеты" class="list-device-back">Фитнес-браслеты</a></li>
+          <li><a href=""><img src="img/popular-5.svg" alt="Фитнес-браслеты" class="list-device-back">Умные часы</a></li>
+          <li><a href=""><img src="img/popular-6.svg" alt="Квадрокоптеры" class="list-device-back">Квадрокоптеры</a></li>
         </ul>
      
 
-      <section>
-        <a href=""><h3>Доставка</h3></a>
-        <a href=""><h3>Гарантия</h3></a>
-        <a href=""><h3>Кредит</h3></a>
-      </section>
+      <div class="fon">
+        <ul class="livraison">
+        <li><a href="">Доставка</a></li>
+        <li><a href="">Гарантия</a></li>
+        <li><a href="">Кредит</a></li>
+      </ul>
+      
 
       
-        <p>Доставка</p>
+        <p class="grand-livraison">Доставка</p>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему<br>
            подъезду совершенно бесплатно! Ведь мы неплохо<br>
            заработаем, поднимая его на ваш этаж.</p>
-      
+        </div>
 
       <div>
-        <ul>
+        <ul class="produit">
          <li><a href="#"><img src="img/dji.png" alt="DJI"></a></li>
          <li> <a href="#"><img src="img/SP-ADGETS.png" alt="ADJETS"></a></li>
          <li> <a href="#"><img src="img/GoPro.png" alt="GOPRO"></a></li>
@@ -79,34 +88,34 @@
         
      </div>
       <section>
-        <h2>О нас</h2>
-        <ul>
-          <li>
+        <h2 class="about">О нас</h2>
+        
+          
             <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
                который есть в каждом из нас<br></p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки<br>
                России! DEVICE работает со многими транспортными компаниями.
             </p>
-          </li>
-        </ul>
-        <ul>
+          
+        
+        <ul class="about-2">
           <li><a href="">Деловые линии</a></li>
           <li><a href="">Автотрейдинг</a></li>
           <li><a href="">ЖелДорЭкспедиция</a></li>
-          <li><a href=""><span>Подробнее о нас</span></a></li>
+          <li><a href=""><span class="information">Подробнее о нас</span></a></li>
         </ul>
       </section>
 
       <section>
-          <h2>Контакты</h2>
-          <ul>
-            <li>
+          <h2 class="contact">Контакты</h2>
+         
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
                  проверить работоспособность покупки. Всякое бывает.
-                 </p></li>
-                 </ul>
+                 </p>
+                 
+                 <button type="button" class="button">Подробнее о нас</button>
 
-                 <button type="button"><span>Напишите нам</span></button>
+                 <button type="button" class="button"><span>Напишите нам</span></button>
                  <form action="https://echo.htmlacademy.ru" method="post">
                 <p>
                   <label for="appointment-name"> Имя: </label>
@@ -118,39 +127,39 @@
                 <p><label for="appointment-text"> Текст письма: </label>
                   <input id="appointment-text" type="text" name="text" placeholder="Напишите ваше сообщение">
                 </p>
-                <button type="submit">Отправить</button>
+                <button type="submit" >Отправить</button>
                 </form>
                  <img src="img/carts.png" width="500" height="250" alt="карта">
         </section>
     </main>
-    <footer>
-      <p>г. Москва, ул Строителей 15</p>
-      <p>Телефон +7(495) 495-95-95</p>
+    <footer class="footer">
+      <section<p class="adresse">г. Москва, ул Строителей 15<br>
+         Телефон +7(495) 495-95-95</p></section>
       <div>
      
-        <ul>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Гарантия</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul >
+          <li><a href="" class="nav-bas">Доставка</a></li>
+          <li><a href="" class="nav-bas">Гарантия</a></li>
+          <li><a href="" class="nav-bas">Контакты</a></li>
         </ul>
       
      
-        <ul>
-          <li><a href="">Вконтакте</a></li>
-          <li><a href="">Фейсбук</a></li>
-          <li><a href="">Инстаграм</a></li>
+        <ul >
+          <li><a href="" class="reseaux">Вконтакте</a></li>
+          <li><a href="" class="reseaux">Фейсбук</a></li>
+          <li><a href="" class="reseaux">Инстаграм</a></li>
         </ul>
       
     </div>
       <p>
         <ul>
-          <li><a href="">Войти</a></li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
+          <li><a href="" class="footer-begin">Войти</a></li>
+          <li><a href="" class="footer-begin">Сравнить</a></li>
+          <li><a href="" class="footer-begin">Корзина</a></li>
         </ul>
      
-        <div><img src="img/logo-html.svg" alt="Logo" width="80" height="80"> </div>
-        <div><img src="img/logo2.svg" alt="Logo" width="80" height="80"> </div>
+        <div><img src="img/logo-html.svg" alt="Logo" width="80" height="80" > </div>
+        <p class="logo-bas">DEVICE</p>
     </footer>
 
   </body>
