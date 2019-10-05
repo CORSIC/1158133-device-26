@@ -447,6 +447,11 @@ padding-bottom: 80px;
     font-size: 47px;
     line-height: 48px;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 113px;
+    padding-right: 352px;
+    padding-bottom: 44px;
 
 }
 
@@ -474,7 +479,20 @@ padding-bottom: 80px;
     font-size: 47px;
     line-height: 48px;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 113px;
+    padding-right: 259px;
+    padding-bottom: 44px;
+    padding-left: 104px;
 
+
+}
+
+.delivery {
+    display: flex;
+    justify-content: space-between; 
+    
 }
 
 .products-list {
