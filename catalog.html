@@ -7,46 +7,76 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <img src="img/logo-device.svg" width="120" height="130" alt="logo-device">
+     
     <header class="main-header">
-      <nav>
-          <form>
-              <p><input type="search" name="q" placeholder="Поиск по сайту">
-                <input type="submit" value="Найти" ></p>
-             </form>
-        <ul>
-         <li><a href="">Войти</a></li>
-          <li><a href="">Сравнить</a></li>
-          <li><a href="">Корзина</a></li>
-        </ul>
-      </nav>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="catalog.html" class="nav-link">Каталог товаров</a></li>
-          <li><a href="" class="nav-link">Доставка</a></li>
-          <li><a href="" class="nav-link">Гарантия</a></li>
-          <li><a href="" class="nav-link">Контакты</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="main-header-navigation">
+           <a class="header-logo">DEVICE</a>
+            <div class="user-navigation">
+              <form class="search-form">
+                <p>
+                <label for="search" class="visually-hidden">Поиск по сайту</label>
+                <input type="search" id="search" name="q" placeholder="Поиск по сайту" class="search">
+                <input type="submit" value="Найти" class="search-button"></p>
+              </form>
+              <ul class="nav-user">
+                <li><a href="">Войти</a></li>
+              </ul>
+              <ul class="nav-cart">
+                  <li><a href="" class="compare">Сравнить</a></li>
+                  <li><a href="" class="basket">Корзина</a></li>
+              </ul>
+            </div>
+            <ul class="nav-list">
+              <li class="new-item-dropdown">
+                <a href="catalog.html" class="nav-link nav-link-dropdown" >Каталог товаров</a>
+                <ul class="nav-list-dropdown">
+                    <li><a href="#">Виртуальная реальность</a></li>
+                    <li><a href=""> Моноподы для сэлфи</a></li>
+                    <li><a href="">Экшн-камеры</a></li>
+                    <li><a href="">Фитнес-браслеты</a></li>
+                    <li><a href="">Умные часы</a></li>
+                    <li><a href="">Квадрокоптеры</a></li>
+                </ul>
+              </li>
+              <li><a href="" class="nav-link">Доставка</a></li>
+              <li><a href="" class="nav-link">Гарантия</a></li>
+              <li><a href="" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+      </div>
     </header>
     <main>
-     
+     <div class="container">
         <h1 class="logo-catalog">Моноподы для сэлфи</h1>
-        <section class="filtr">
-          
-          <div class="filtr-catalog">Фильтр: 
-                                     Сортировка : </div>
-          <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По популярности</li>
+        <div class="filtr">
+          <div class="filtr-catalog-principale">
+          <div class="filtr-catalog">Фильтр:</div>
+          <div class="catalog-filtr">
+            Сортировка:
+          <ul class="crtiteries">
+            <li class="price">По цене</li>
+            <li class="type">По типу</li>
+            <li >По популярности</li>
           </ul>
-          <div>Стоимость</div>
-            <input type="range" placeholder="От 0 до 5000">
+        </div>
+      </div>
+      <div class="panel">
+
+          <div class="price-2">Стоимость</div>
+            <form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+                <input name="flevel" id="flying" type="range" min="0" max="5000" value="20" step="10">
+            </form>
+            <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+              </div>
+              
             <h2>Цвет</h2>
-            <fieldset>
-            <ul>
-              <li><input type="checkbox" name="option1" value="a1" checked>Черный</li>
+            <div class="checkbox">
+              </div>
+            <ul class="colors">
+                <li><input type="checkbox" name="option1" value="a1">Черный</li>
                 <li><input type="checkbox" name="option2" value="a2">Белый</li>
                 <li><input type="checkbox" name="option3" value="a3">Синий</li>
                 <li><input type="checkbox" name="option4" value="a4">Красный</li>
@@ -60,19 +90,24 @@
                <input name="Non" type="radio" value="Non">Нет<br></p>
                <button type="button" class="button">Показать</button>
 
-        </section>
 
+              
+
+
+        </section>
+      </div>
+    </div>
         <section>
             <ul class="amateur">
                 <li>
             <a href="">Любительская сэлфи-палка</a>
-            <p><a href="bla.html"><img src="img/amateur.png" alt="Любительская сэлфи-палка" width="300" height="500" ></a></p>
+            <p><a href="bla.html"><img src="img/amateur.png" alt="Любительская сэлфи-палка" width="300" height="500" class="selfi-amateur"></a></p>
             <p><span class="cout"> 500 руб.</span></p>
         </li>
         <li>
                 <a href="">Профессиональная <br>
                     сэлфи-палка</a>
-                <p><a href="bla.html"><img src="img/prof.png" alt="Профессиональная сэлфи-палка" width="300" height="500"></a></p>
+                <p><a href="bla.html"><img src="img/prof.png" alt="Профессиональная сэлфи-палка" width="300" height="500" class="prof-selfi"></a></p>
                 <p><span class="cout"> 1500 руб.</span></p>
             </li>
             <li>
@@ -96,36 +131,63 @@
          <li> <a href="#">3</a></li>
          <li> <a href="#">Вперед</a></li>
         </ul>
+      </div>
         </main>
         <footer class="footer">
-            <section<p class="adresse">г. Москва, ул Строителей 15<br>
-               Телефон +7(495) 495-95-95</p></section>
-            <div>
-           
-              <ul >
-                <li><a href="" class="nav-bas">Доставка</a></li>
-                <li><a href="" class="nav-bas">Гарантия</a></li>
-                <li><a href="" class="nav-bas">Контакты</a></li>
-              </ul>
+            <div class="container">
+              <div class="logo-footer">DEVICE</div>
+              <div class="footer-wrapper">
+            <section class="adresse">г. Москва, ул Строителей 15</section>
+            
             
            
-              <ul >
-                <li><a href="" class="reseaux">Вконтакте</a></li>
-                <li><a href="" class="reseaux">Фейсбук</a></li>
-                <li><a href="" class="reseaux">Инстаграм</a></li>
+              <ul class="nav-bas">
+                <li><a href="" class="nav-bas-delivery">Доставка</a></li>
+                <li><a href="" class="nav-bas-garanty">Гарантия</a></li>
+                <li><a href="" class="nav-bas-contact">Контакты</a></li>
               </ul>
             
-          </div>
-            <p>
-              <ul>
+              <section class="telephone-footer">Телефон +7(495) 495-95-95</section>
+      
+             <ul class="reseaux">
+                <li><a href="https://www.facebook.com" class="reseaux" ><img src ="img/fb.svg" alt="FACEBOOK"></a></li>
+                <li><a href="https://www.instagram.com" class="reseaux"><img src="img/instagram.svg" alt="INSTAGRAM"></a></li>
+                <li><a href="https://twitter.com" class="reseaux"><img src="img/twitter.svg" alt="TWITER"></a></li>
+              </ul>
+              
+              <ul class="footer-begin">
                 <li><a href="" class="footer-begin">Войти</a></li>
                 <li><a href="" class="footer-begin">Сравнить</a></li>
                 <li><a href="" class="footer-begin">Корзина</a></li>
               </ul>
            
-              <div><img src="img/logo-html.svg" alt="Logo" width="80" height="80" > </div>
-              <p class="logo-bas">DEVICE</p>
+              <div><img src="img/logo-html.svg" alt="Logo" width="27" height="35" class="logo-device-footer"> </div>
+            </div>
+            </div>
           </footer>
       
+          <section class="feedback-popup">
+                
+                       
+                    
+            
+      
+      
+              <form action="https://echo.htmlacademy.ru" method="post">
+             <p>
+               <label for="appointment-name"> Имя: </label>
+               <input id="appointment-name" type="text" name="name" placeholder="Сергей">
+             </p>
+             <p><label for="appointment-mail"> Ваш E-mail: </label>
+               <input id="appointment-mail" type="text" name="E-mail" placeholder="example@example.fr">
+             </p>
+             <p><label for="appointment-text"> Текст письма: </label>
+               <input id="appointment-text" type="text" name="text" placeholder="Напишите ваше сообщение">
+             </p>
+             <button type="submit" >Отправить</button>
+             </form>
+              
+      </section>
         </body>
       </html>
+      
