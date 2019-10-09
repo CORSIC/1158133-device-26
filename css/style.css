@@ -750,6 +750,8 @@ a {
 
 .panel {
     display: flex;
+    background-image: linear-gradient(to right,#eee 0,#eee 28%,#fff 28%,#fff 100%);
+    
 }
 
 
@@ -758,8 +760,13 @@ a {
 }
 
 
+.filtr {
+    background-image: linear-gradient(to right,#dcdcdc 0,#dcdcdc 28%,#ebebeb 28%,#ebebeb 100%);
+    
+}
+
+
 .filtr-catalog-principale {
-    background-color: #efefef;
     display: flex;
     padding-top: 22px;
     height: 70px;
@@ -776,7 +783,6 @@ a {
     display: flex;
     padding-right: 254px;
     
-    background-color: #DCDCDC;
     
 }
 
@@ -854,6 +860,7 @@ input[type=range]::-webkit-slider-runnable-track {
     display: flex;
     flex-wrap: wrap;
     
+    
 }
 
 .devices-item {
@@ -884,6 +891,10 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 
+.forms-left {
+    display: flex;
+    width: 200px;
+}
 
 
 .cout {
@@ -898,9 +909,7 @@ input[type=range]::-webkit-slider-runnable-track {
 
 
 .numerotation-text {
-    font-family: "Gilroy", "Arial", "sans-serif";
-    
-    
+    font-family: "Gilroy", "Arial", "sans-serif"; 
     line-height: 24px;
     color: #000000;  
     background-color: #efefef;
@@ -911,8 +920,7 @@ input[type=range]::-webkit-slider-runnable-track {
     height: 70px;
     font-weight: 800;
     font-size: 15px;
-   
-
+    align-items: center;
 }
 
 
